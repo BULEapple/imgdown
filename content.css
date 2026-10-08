@@ -1,0 +1,24 @@
+/* content.css —— 悬浮「获取图片」按钮样式（粉紫渐变、圆角、阴影、hover 反馈） */
+#img-fetch-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 96px; /* 上移，避免遮挡常见的「回到顶部/客服」按钮 */
+  z-index: 2147483647;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  background: linear-gradient(135deg, #f472b6, #a78bfa);
+  box-shadow: 0 4px 14px rgba(167, 139, 250, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  pointer-events: auto;
+}
+#img-fetch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(167, 139, 250, 0.55);
+}
+#img-fetch-btn:active {
+  transform: translateY(0);
+}

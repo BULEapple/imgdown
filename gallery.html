@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品图片</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <header class="toolbar">
+    <h1>商品图片</h1>
+    <div class="actions">
+      <button id="select-all">全选</button>
+      <button id="invert">反选</button>
+      <span id="count">已选 0 张</span>
+      <button id="download" class="primary" disabled>下载选中</button>
+    </div>
+    <div id="status"></div>
+  </header>
+  <main id="grid" class="grid"></main>
+  <script src="zip.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>
